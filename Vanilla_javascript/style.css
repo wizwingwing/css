@@ -1,10 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Pridi&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
 *
 {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Pridi', serif;
+    /* font-family: 'Prompt', sans-serif; */
+    font-family: 'Itim', cursive;
 }
 body
 {
@@ -113,6 +115,7 @@ select
     width: 10rem;
     cursor: pointer;
     padding: 1rem;
+    font-weight: bolder;
 }
 .select
 {
