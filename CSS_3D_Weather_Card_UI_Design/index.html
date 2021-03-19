@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Card UI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.more').click(function(){
+                $('.back').addClass('active')
+                $('.front').removeClass('active')
+            })
+            $('.go-back').click(function(){
+                $('.back').removeClass('active')
+                $('.front').addClass('active')
+            })
+        })
+    </script>
+</head>
+<body>
+    <div class="card">
+        <div class="front">
+            <div class="font active"></div>
+            <div class="location">New Delhi</div>
+            <div class="more">
+                <i class="fa fa-info" aria-hidden="true"></i>
+            </div>
+            <div class="weather">
+                <i class="fa fa-cloud" aria-hidden="true"></i>
+                <h1>8<sub>๐</sub><br><span>Today</span></h1>
+            </div>
+            <ul class="forecast">
+                <li>
+                    <div class="day">Sunday</div>
+                    <div class="temprature">
+                        <i class="fa fa-snowflake-o" aria-hidden="true"></i>
+                        9<sub>๐</sub>
+                    </div>
+                </li>
+                <li>
+                    <div class="day">Monday</div>
+                    <div class="temprature">
+                        <i class="fa fa-tint" aria-hidden="true"></i>
+                        6<sub>๐</sub>
+                    </div>
+                </li>
+                <li>
+                    <div class="day">Sunday</div>
+                    <div class="temprature">
+                        <i class="fa fa-snowflake-o" aria-hidden="true"></i></i>
+                        2<sub>๐</sub>
+                    </div>
+                </li>
+            </ul>
+        </div>
+            <div class="back">
+                <div class="go-back">
+                    <i class="fa fa-chevron-circle-left" aria-hidden="true"></i>
+                </div>
+                    <ul class="forecast">
+                <li>
+                    <div class="day">Yesterday</div>
+                    <div class="temprature">
+                        <i class="fa fa-snowflake-o" aria-hidden="true"></i>
+                        3<sub>๐</sub>
+                    </div>
+                </li>
+                <li>
+                    <div class="day">Today</div>
+                    <div class="temprature">
+                        <i class="fa fa-tint" aria-hidden="true"></i>
+                        6<sub>๐</sub>
+                    </div>
+                </li>
+                <li>
+                    <div class="day">Tomorrow</div>
+                    <div class="temprature">
+                        <i class="fa fa-cloud" aria-hidden="true"></i>
+                        9<sub>๐</sub>
+                    </div>
+                </li>
+                <li>
+                    <div class="day">Sunday</div>
+                    <div class="temprature">
+                        <i class="fa fa-tint" aria-hidden="true"></i>
+                        6<sub>๐</sub>
+                    </div>
+                </li>
+                <li>
+                    <div class="day">Monday</div>
+                    <div class="temprature">
+                        <i class="fa fa-tint" aria-hidden="true"></i>
+                        6<sub>๐</sub>
+                    </div>
+                </li>
+                <li>
+                    <div class="day">Tuesday</div>
+                    <div class="temprature">
+                        <i class="fa fa-snowflake-o" aria-hidden="true"></i></i>
+                        2<sub>๐</sub>
+                    </div>
+                </li>
+                <li>
+                    <div class="day">Wednesday</div>
+                    <div class="temprature">
+                        <i class="fa fa-snowflake-o" aria-hidden="true"></i></i>
+                        2<sub>๐</sub>
+                    </div>
+                </li>
+            </ul>
+                </div>
+            </div>
+    </div>
+</body>
+</html>
